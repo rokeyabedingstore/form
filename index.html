@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--  if in mobile connect this link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+      <!--  external css is there  -->
+      <link rel="stylesheet" href="style.css">
+      <!--  font awesome file connect -->
+      <!-- <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css"> -->
+      
+    <title>My BookList App</title>
+  </head>
+  <body>
+
+    <!--  body div for dark mode -->
+    <div id="body">
+
+    <div class="container mt-4">
+      <h1 class="display-4 text-center"><i class="fas fa-book-open text-warning"></i> JSBangladesh<span class="text-warning"> Book</span>List</h1>
+      <!--   dark and white mode making using js -->
+      <div class="Dark-items"> 
+      <i class="fa-solid fa-sun" id="cloud"></i>
+      <i class="fa-solid  fa-cloud" id="sun"></i>
+
+      </div>
+
+      <div class="font_changing" id="font">
+          <i class="fa-solid fa-f">-V</i>
+      </div>
+        
+            <!--  end there  -->
+      <!--  warning section start there  -->
+      <div class="alert">
+        <span class="fa-solid fa-check"></span>
+        <span class="msg">Please fill the input!</span>
+        <span class="close-btn">
+        <span class="fas fa-times"></span>
+        </span>
+      </div>
+
+
+
+
+
+
+
+
+            <!--  warning sectiuon end there  -->
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="text" id="year" class="form-control" />
+        </div>
+        <input type="submit" value="Add Book" class="btn btn-warning btn-block" />
+      </form>
+      <table class="table table-striped mt-5 text-center"> 
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+
+
+
+     <!--  footer section -->
+     <section id="social">
+       <h1 class="follow">follow us</h1>
+         <div class="icon">
+             <ul>
+                 <li><i class="fab fa-facebook-f"></i></li>
+                 <li><i class="fab fa-instagram"></i></li>
+                 <li><i class="fab fa-twitter"></i></li>
+             </ul>
+         </div>
+     </section>
+
+
+        <!--  dark and light there end there  -->
+    </div>
+
+
+
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
